@@ -7,16 +7,7 @@ public class CameraRotation : MonoBehaviour {
     private float mouseX;
     private float mouseY;
 
-    //Degrees
-    private float verticalRotationMin = 0f;
-    private float verticalRotationMax = 65f;
-
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
+ 
 	// Update is called once per frame
 	void LateUpdate () {
         HandleMouseRotation();
@@ -38,10 +29,12 @@ public class CameraRotation : MonoBehaviour {
             //Handles vertical rotation
 
             if(Input.mousePosition.y != mouseY){
-                GameObject MainCamera = this.gameObject.transform.Find("Main Camera").gameObject;
+                GameObject MainCamera = this.gameObject.transform.Find("360Camera").gameObject;
                 var cameraRotationX = (mouseY - Input.mousePosition.y)*easeFactor*Time.deltaTime;
                 MainCamera.transform.Rotate(cameraRotationX,0,0);
             }
         }
     }
+
+   
 }

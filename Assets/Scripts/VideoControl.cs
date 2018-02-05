@@ -29,12 +29,12 @@ public class VideoControl : MonoBehaviour {
     public void PlayPause(){
         if (videoPlayer.isPlaying){
             videoPlayer.Pause();
-            screenRenderer.material = playButtonMaterial;
+            //screenRenderer.material = playButtonMaterial;
         }
 
         else{
             videoPlayer.Play();
-            screenRenderer.material = pauseButtonMaterial;
+            //screenRenderer.material = pauseButtonMaterial;
         }
             
     }

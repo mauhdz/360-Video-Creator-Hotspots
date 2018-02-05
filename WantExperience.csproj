@@ -111,7 +111,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Hotspots.cs" />
     <Compile Include="Assets\Scripts\CameraRotation.cs" />
+    <Compile Include="Assets\Scripts\CameraSwitch.cs" />
     <Compile Include="Assets\Scripts\MouseFollow.cs" />
     <Compile Include="Assets\Scripts\MouseOrbit.cs" />
     <Compile Include="Assets\Scripts\VideoControl.cs" />
